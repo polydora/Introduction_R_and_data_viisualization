@@ -3,11 +3,16 @@ title: Основы подготовки и визуализации данны�
 description: Вводная информация 
 ---
 
+```{r echo=FALSE, include=FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE, message = FALSE)
+```
 
-```{r r, echo=FALSE,out.width="20%",out.height="20%",fig.cap = " ", fig.show='hold',fig.align='center'}
+
+```{r, echo=FALSE,out.width="20%",out.height="20%",fig.cap = " ", fig.show='hold',fig.align='center'}
 
 
-knitr::include_graphics(c("Figures/logo_osd.png", "Figures/R_logo.png","Figures/kandalaksha-zap-emb.gif"))
+knitr::include_graphics(c("Figures/logo_osd.png", "Figures/R_logo.png","Figures/kandalaksha-zap-emb.jpg"))
 
 
 ```
@@ -50,5 +55,47 @@ R – ведущая статистическая программа для ан
 <br>
 
 ![**Вадим Михайлович Хайтов**, polydora__rambler.ru](Figures/Vadim.jpg)
+
+<!-- ```{r} -->
+<!-- text_V <- "Хайтов Вадим Михайлович. Морской биолог, кандидат Биологических наук, ведущий научный сотрудник Кандалакского государственного заповедника. email: polydora@rambler.ru" -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- text_A <- "Анна Сергеевна Мухачева. email: siam83@mail.ru " -->
+<!-- ``` -->
+
+
+
+
+<!-- ```{r} -->
+<!-- library(ggplot2) -->
+<!-- library(cowplot) -->
+<!-- library(magick) -->
+<!-- library(ggtext) -->
+
+<!-- photo <- ggdraw() + draw_image("Figures/Anna.jpg") -->
+
+<!-- gg_text <- -->
+<!--   ggplot() +  -->
+<!--   annotate("text", x = 0, y = 0, label =  stringr::str_wrap(text_A, 50, indent = 5), hjust = 0) + -->
+<!--   xlim(0, 100) + theme_nothing() -->
+
+<!-- plot_grid(photo, gg_text) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- photo <- ggdraw() + draw_image("Figures/Vadim.jpg") -->
+
+<!-- gg_text <- -->
+<!--   ggplot() +  -->
+<!--   annotate("text", x = 0, y = 0, label =  stringr::str_wrap(text_V, 50, indent = 5), hjust = 0) + -->
+<!--   xlim(0, 100) + theme_nothing() -->
+
+<!-- plot_grid(photo, gg_text) -->
+
+<!-- ``` -->
+
 
 
