@@ -12,4 +12,12 @@ output:
     css: my_styles.css
 ---
 
-Страница оформляется
+## Книги
+
+- https://drive.google.com/drive/folders/1h8bzf1yujU-NEkbyzqIlbuA1XMLxpmAC?usp=drive_link
+
+- [ggplot: Визуализация даных](https://drive.google.com/file/d/1HD2X36Lfy9hiIaBTzhQ57EsToLh2ShG7/view?usp=sharing) 
+
+- https://drive.google.com/file/d/1GVYorXdbCyx5ypy1cZ_rIhBf4dR_xR_2/view?usp=drive_link
+
+- https://drive.google.com/file/d/1HD2X36Lfy9hiIaBTzhQ57EsToLh2ShG7/view?usp=drive_link
