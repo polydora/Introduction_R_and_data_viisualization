@@ -11,9 +11,13 @@ output:
     css: my_styles.css
 ---
 
+## Первые действия
+- [Установка R и RStudio на компьютеры под OC Windows](Intro_to_R_first_steps.html)
+
+
 ## Книги
 
-- [Визуализация даных с помощью ggplot2](https://drive.google.com/file/d/1HD2X36Lfy9hiIaBTzhQ57EsToLh2ShG7/view?usp=sharing) 
+- [Визуализация даных с помощью ggplot2](https://drive.google.com/file/d/1lGfc0yjIYHBYst5HYuNBiSuQ9I-kXoZ5/view?usp=sharing) 
 
 - [Наглядная статистика. Используем R!](https://drive.google.com/file/d/1HD2X36Lfy9hiIaBTzhQ57EsToLh2ShG7/view?usp=drive_link)
 

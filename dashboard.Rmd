@@ -5,7 +5,6 @@ output:
     toc: false
     toc_float:
       collapsed: false
-    theme: simplex
     highlight: haddock
     include:
       after_body: _footer.html
