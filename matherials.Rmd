@@ -13,6 +13,7 @@ output:
 
 ## Первые действия
 - [Установка R и RStudio на компьютеры под OC Windows](Intro_to_R_first_steps.html)
+- [Установка R и RStudio на компьютеры под OC Linux (тестировнао на Ubuntu 22.04.3)](https://drive.google.com/file/d/1AjBSoWZ3DmXt-7Rv88jfCbQNm1M1aEmM/view?usp=sharing)
 
 
 ## Книги
