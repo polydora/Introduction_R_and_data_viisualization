@@ -11,15 +11,81 @@ output:
     css: my_styles.css
 ---
 
-## Первые действия
+# **Первые действия**
 - [Установка R и RStudio на компьютеры под OC Windows](Intro_to_R_first_steps.html)
 - [Установка R и RStudio на компьютеры под OC Linux (тестировнао на Ubuntu 22.04.3)](https://drive.google.com/file/d/1AjBSoWZ3DmXt-7Rv88jfCbQNm1M1aEmM/view?usp=sharing)
 
 
-## Книги
+# **Книги**
 
 - [Визуализация даных с помощью ggplot2](https://drive.google.com/file/d/1lGfc0yjIYHBYst5HYuNBiSuQ9I-kXoZ5/view?usp=sharing) 
 
 - [Наглядная статистика. Используем R!](https://drive.google.com/file/d/1HD2X36Lfy9hiIaBTzhQ57EsToLh2ShG7/view?usp=drive_link)
 
 - [Статистическая обработка данных на языке R](https://drive.google.com/file/d/1GVYorXdbCyx5ypy1cZ_rIhBf4dR_xR_2/view?usp=drive_link)
+
+**Дополнительно:** Некоторые пособия (на английском языке) вы найдете на стрнаичке "Полезности" нашего сайта.
+
+<br>
+<br>
+
+# **Материалы лекций**
+
+## *Лекция 1.* Знакомство с R 
+
+- [Скрипт](https://drive.google.com/file/d/14utYHyblQ3R-12m6XFbKO9tKAOG6F1tD/view?usp=drive_link)
+- [Домашнее задание](https://docs.google.com/document/d/1e9xi5rzaFdD_qoZ0U1O4greW9TuruF4M/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+
+## *Лекция 2.* Работа с таблицами
+
+- [Скрипт](https://drive.google.com/file/d/1sbENZKPvbNUxI4gX-vw4kDZFvKHszR4r/view?usp=drive_link)
+- [Домашнее задание](https://docs.google.com/document/d/1SQvzqIxSQ27gjA-_q0SqO0duyaT2nFOl/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+
+
+## *Лекция 3.* Работа с базовой графикой
+
+
+- [Скрипт](https://drive.google.com/file/d/1-iWTD5agp_qDRDy9HDQMsHjKCrkzlzyh/view?usp=drive_link)
+- [Домашнее задание](https://docs.google.com/document/d/1Bnb6Cd25O3HxrTE1YXVky1stsDZ7mwvU/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+
+
+
+## *Лекция 4.* Визуализация данных с помощью пакета `gplot2`
+
+- [Скрипт]()
+- [Домашнее задание]()
+
+
+## *Лекция 5.* Работа с данными
+
+- [Скрипт]()
+- [Домашнее задание]()
+
+
+## *Лекция 6.* Встроенные функции для работы с данными
+
+
+- [Скрипт]()
+- [Домашнее задание]()
+
+
+## *Лекция 7.* Пакеты `tidyr` и `dplyr`
+
+- [Скрипт]()
+- [Домашнее задание]()
+
+
+## *Лекция 8.* Основы литературного программирования. Часть 1: Язык разметки страниц `R Markdown`
+
+<br>
+
+## *Лекция 9.* Основы литературного программирования. Часть 2: Работа с таблицами в R Markdown и создание отчетов в формате Word.
+
+<br>
+
+# **Проекты** 
+
+
+
+
+
