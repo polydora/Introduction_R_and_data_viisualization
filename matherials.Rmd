@@ -31,6 +31,7 @@ output:
 
 # **Материалы лекций**
 <br>
+
 ## *Лекция 1.* Знакомство с R 
 
 - [Скрипт](https://drive.google.com/file/d/14utYHyblQ3R-12m6XFbKO9tKAOG6F1tD/view?usp=drive_link)
@@ -38,23 +39,27 @@ output:
 - [Домашнее задание](https://docs.google.com/document/d/1e9xi5rzaFdD_qoZ0U1O4greW9TuruF4M/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
 
 ## *Лекция 2.* Работа с таблицами
+<br>
 
-- [Скрипт](https://drive.google.com/file/d/1sbENZKPvbNUxI4gX-vw4kDZFvKHszR4r/view?usp=drive_link)
+<!-- - [Скрипт](https://drive.google.com/file/d/1sbENZKPvbNUxI4gX-vw4kDZFvKHszR4r/view?usp=drive_link) -->
 
-- [Домашнее задание](https://docs.google.com/document/d/1SQvzqIxSQ27gjA-_q0SqO0duyaT2nFOl/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+<!-- - [Домашнее задание](https://docs.google.com/document/d/1SQvzqIxSQ27gjA-_q0SqO0duyaT2nFOl/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true) -->
 
 
 ## *Лекция 3.* Работа с базовой графикой
+<br>
 
-- [Скрипт](https://drive.google.com/file/d/1-iWTD5agp_qDRDy9HDQMsHjKCrkzlzyh/view?usp=drive_link)
+<!-- - [Скрипт](https://drive.google.com/file/d/1-iWTD5agp_qDRDy9HDQMsHjKCrkzlzyh/view?usp=drive_link) -->
 
-- [Домашнее задание](https://docs.google.com/document/d/1Bnb6Cd25O3HxrTE1YXVky1stsDZ7mwvU/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+<!-- - [Домашнее задание](https://docs.google.com/document/d/1Bnb6Cd25O3HxrTE1YXVky1stsDZ7mwvU/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true) -->
 
 
 
 ## *Лекция 4.* Визуализация данных с помощью пакета `gplot2`
 <br>
-<!-- - [Скрипт]() -->
+
+<!-- - [Презентация с объяснением основ работы в `ggplot2`](Pres_intro_ggplot.html) -->
+<!-- - [Скрипт](intro_ggplot.R) -->
 <!-- - [Домашнее задание]() -->
 
 
