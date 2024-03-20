@@ -1,0 +1,60 @@
+---
+title: "Домашняя работа по визуализации данных в ggplot2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+
+# Самостоятельная работа
+Используя [файл с данными по гидрологическим и метеорологическим наблюдениям](data/hydrology_2022.xls) напишите код, который приведен к появлению следующих визуализаций. 
+
+**Переменные в данных**
+
+- *Date_Time*	Дата и время
+- *Month* Месяц	
+- *Air_T*	Температура воздуха
+- *S*	Соленость
+- *Wind* Направление ветра	
+- *Wave* Волнение моря в баллах	
+- *Water_T* Температура воды
+
+
+
+
+```{r}
+library(readxl)
+library(ggplot2)
+
+hydr <- read_excel("data/hydrology_2022.xls", na = "NA")
+hydr$Date <- as.POSIXct(hydr$Date_Time, format = "%d.%m.%Y %H:%M")
+```
+
+```{r}
+ggplot(hydr, aes(x = Date, y = S)) +
+  geom_point() +
+  theme_bw()+
+  labs(x = "Дата", y = "Соленость")
+```
+
+
+
+```{r}
+ggplot(hydr, aes(x = Month, y = Water_T)) +
+  geom_boxplot() +
+  theme_bw()+
+  labs(x = "Месяц", y = "Температура воды")
+```
+
+
+
+```{r}
+ggplot(hydr, aes(x = Water_T, y = S)) +
+  geom_point(color = "red", size = 3) +
+  geom_smooth(method = "lm") +
+  theme_bw()+
+  labs(x = "Температура воды", y = "Соленость")
+```
+
