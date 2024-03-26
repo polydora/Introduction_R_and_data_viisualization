@@ -38,6 +38,8 @@ output:
 
 - [Домашнее задание](https://docs.google.com/document/d/1e9xi5rzaFdD_qoZ0U1O4greW9TuruF4M/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
 
+- [Видео семинара](https://drive.google.com/file/d/15uYiayOunjzZNuo3I95HG6k63x3MHllf/view?usp=drive_link)
+
 ## *Лекция 2.* Работа с таблицами
 <br>
 
