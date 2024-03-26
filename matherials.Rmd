@@ -40,6 +40,9 @@ output:
 
 - [Видео семинара](https://drive.google.com/file/d/15uYiayOunjzZNuo3I95HG6k63x3MHllf/view?usp=drive_link)
 
+- [Видео о том, как работать с RStudio в Облаке](https://drive.google.com/file/d/1EbJvC8YtZISA_vS4JET0yV5oqzeBFTUe/view?usp=drive_link)
+
+
 ## *Лекция 2.* Работа с таблицами
 <br>
 
