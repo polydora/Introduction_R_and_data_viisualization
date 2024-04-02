@@ -59,6 +59,9 @@ output:
 - [Домашнее задание](https://docs.google.com/document/d/1Bnb6Cd25O3HxrTE1YXVky1stsDZ7mwvU/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
 
 
+- [Видео семинара](https://drive.google.com/file/d/1yzgzbfV7C5LjHf9ZcW1vWA8RyfFK_qCv/view?usp=drive_link)
+
+
 
 ## *Лекция 4.* Визуализация данных с помощью пакета `gplot2`
 <br>

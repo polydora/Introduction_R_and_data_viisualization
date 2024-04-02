@@ -134,10 +134,15 @@ fev <- fev[complete.cases(fev), ]
 Задача: построить точечную диаграмму, где по оси OX отложен Age, а по оси OY отложен FEV
 
 
-```{r}
+```{r, echo=FALSE}
 ggplot(data = fev, aes(x = Age, y = FEV)) + geom_point()
 
 ```
+
+Попробуйте объяснить "тупому" роботу как построить этот график.
+
+
+
 
 ## убираем серый фон
 
@@ -333,7 +338,7 @@ ggsave("figures/MyPicture_2.wmf", plot = Plot_2)
 ## Эстетики (Aesthetics)
 
 
-В философии ggplot эстетики - это та информация (данные), которую можно выразить графиком.
+В философии ggplot эстетики - это та информация (данные), которую мы собираемся выразить графиком.
 
 Минимальные эстетики - Положение на OX и положение на OY
 
@@ -358,7 +363,10 @@ Plot_1
 
 
 ```{r}
-Plot_1 <- Plot_1 + scale_color_manual(values = c("pink","blue"))
+Plot_1 <- 
+  Plot_1 + 
+  scale_color_manual(values = c("pink","blue"))
+
 Plot_1
 ```
 
@@ -367,14 +375,16 @@ Plot_1
 
 ## Меняеем положение легенды 
 ```{r}
-Plot_1  + theme(legend.position =  "bottom")
+Plot_1  + 
+  theme(legend.position =  "bottom")
 
 ```
 
 
 ## Меняем положение легенды 
 ```{r}
-Plot_1  + theme(legend.position =  "left")
+Plot_1  + 
+  theme(legend.position =  "left")
 
 ```
 
@@ -383,7 +393,8 @@ Plot_1  + theme(legend.position =  "left")
 
 ## Меняем положение легенды 
 ```{r}
-Plot_1  + theme(legend.position =  c(0.1, 0.9)) 
+Plot_1  + 
+  theme(legend.position =  c(0.1, 0.9)) 
 
 ```
 
@@ -411,7 +422,8 @@ Plot_1
 Если мы хотим выразить графиком одновременно данные по полу и по курению, то мы должны задать две разные эстетики
 
 ```{r}
-Plot_1 <- ggplot(data = fev, aes(x = Age, y = FEV, shape = Sex, color = Smoker )) + 
+Plot_1 <- 
+  ggplot(data = fev, aes(x = Age, y = FEV, shape = Sex, color = Smoker )) + 
   geom_point(size = 2) + 
   labs(x = "Возраст", y = "Объем легких", title = "Зависимость между \n возрастом и объемом легких") + 
   theme(plot.title = element_text(hjust = 0.5))
@@ -454,7 +466,8 @@ Plot_1 + facet_grid(Sex ~ Smoker)
 
 ## geom_histogram()
 ```{r}
-ggplot(fev, aes(x = FEV)) + geom_histogram()
+ggplot(fev, aes(x = FEV)) + 
+  geom_histogram()
 
 ```
 
@@ -464,7 +477,8 @@ ggplot(fev, aes(x = FEV)) + geom_histogram()
 Делаем более широкие классовые интервалы
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + geom_histogram(binwidth = 1)
+ggplot(fev, aes(x = FEV)) + 
+  geom_histogram(binwidth = 1)
 
 ```
 
@@ -474,7 +488,8 @@ ggplot(fev, aes(x = FEV)) + geom_histogram(binwidth = 1)
 Делаем более узкие классовые интервалы
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + geom_histogram(binwidth = 0.1)
+ggplot(fev, aes(x = FEV)) + 
+  geom_histogram(binwidth = 0.1)
 
 ```
 
@@ -485,7 +500,8 @@ ggplot(fev, aes(x = FEV)) + geom_histogram(binwidth = 0.1)
 Поскольку в основе построения гистограммы лежит статистическая процедура (определение частот), то все тоже самое можно сделать с помощью функций stat_...
 
 ```{r, message=FALSE}
-ggplot(fev, aes(x = FEV)) + stat_bin(geom = "bar") #Аналогично!
+ggplot(fev, aes(x = FEV)) + 
+  stat_bin(geom = "bar") #Аналогично!
 
 ```
 
@@ -494,18 +510,21 @@ ggplot(fev, aes(x = FEV)) + stat_bin(geom = "bar") #Аналогично!
 
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + stat_bin(geom = "bar", binwidth = 0.1)
+ggplot(fev, aes(x = FEV)) + 
+  stat_bin(geom = "bar", binwidth = 0.1)
 
 ```
 
 Аналогично применению `geom_histogram(binwidth = 0.1)`
+
 
 ## Используем другой геом
 
 ### Частотное распределение можно выразить еще и линией
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + stat_bin(geom = "line", size = 1, color = "red")
+ggplot(fev, aes(x = FEV)) + 
+  stat_bin(geom = "line", size = 1, color = "red")
 
 ```
 
@@ -515,7 +534,8 @@ ggplot(fev, aes(x = FEV)) + stat_bin(geom = "line", size = 1, color = "red")
 ### А можно еще и закрашенной областью 
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + stat_bin(geom = "area", size = 1, color = "red")
+ggplot(fev, aes(x = FEV)) + 
+  stat_bin(geom = "area", size = 1, color = "red")
 
 ```
 
@@ -523,7 +543,8 @@ ggplot(fev, aes(x = FEV)) + stat_bin(geom = "area", size = 1, color = "red")
 
 Например, так 
 ```{r}
-ggplot(fev, aes(x = FEV)) + stat_density(geom = "area", size = 1, color = "red", fill = "blue")
+ggplot(fev, aes(x = FEV)) + 
+  stat_density(geom = "area", size = 1, color = "red", fill = "blue")
 
 ```
 
@@ -533,13 +554,17 @@ ggplot(fev, aes(x = FEV)) + stat_density(geom = "area", size = 1, color = "red",
 ### Мы можем отразить частотное распределение с помощью фасетирования 
 
 ```{r}
-ggplot(fev, aes(x = FEV)) + geom_histogram() + facet_wrap( ~ Sex)
+ggplot(fev, aes(x = FEV)) + 
+  geom_histogram() + 
+  facet_wrap( ~ Sex)
 
 ```
 
 ## Так удобнее сравнивать
 ```{r}
-ggplot(fev, aes(x = FEV)) + geom_histogram() + facet_wrap( ~ Sex, ncol = 1) 
+ggplot(fev, aes(x = FEV)) + 
+  geom_histogram() + 
+  facet_wrap( ~ Sex, ncol = 1) 
 
 ```
 
@@ -554,7 +579,9 @@ ggplot(fev, aes(x = FEV, fill = Smoker)) + geom_histogram() + facet_wrap( ~ Sex,
 
 ## Лучше так
 ```{r}
-ggplot(fev, aes(x = FEV, fill = Smoker)) + stat_density(geom = "area", size = 1, color = "red") + facet_wrap( ~ Sex, ncol = 1)
+ggplot(fev, aes(x = FEV, fill = Smoker)) + 
+  stat_density(geom = "area", size = 1, color = "red") + 
+  facet_wrap( ~ Sex, ncol = 1)
 
 ```
 
@@ -619,6 +646,7 @@ fev %>%
 ggplot(fev_summary, aes(x = Age, y = Mean_FEV)) +
   geom_col(fill = "gray50") +
   labs(x = "Возраст", y = "Средний объем легких")
+
 ```
 
 ## Строим график{.smaller}

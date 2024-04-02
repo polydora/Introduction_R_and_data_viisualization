@@ -341,3 +341,83 @@ ggplot(fev, aes(x = Age, y = FEV, color = Smoker)) +
   facet_wrap( ~ Sex)
 
 
+################ Шуточный пример ##############################
+
+#Запустите код, расположенный между двумя линиями
+
+#___________________________
+
+circus <- function(n, p, cos2 = 0, sin2 =0, cos3 = 0, sin3 = 0){
+  # n - number of points
+  # p - period
+  points <- data.frame(X=c(1:n), Y=c(1:n))
+  factor <- points
+  k <- 0
+  for (i in 1:n){
+    factor$X[i] <- (i-1)/p - k
+    if ((i/p - trunc(i/p))==0) k <- k + 1
+  }
+  
+  factor$Y <- factor$X
+  
+  for (i in 1:n){
+    points$X[i] <- cos(2*3.14*factor$X[i]) + cos(cos2/4*3.14*factor$X[i]) + cos(cos3/4*3.14*factor$X[i])
+    points$Y[i] <- sin(2*3.14*factor$Y[i]) + sin(sin2/4*3.14*factor$Y[i]) + sin(sin3/4*3.14*factor$Y[i])
+  }
+  return(points)
+}
+
+bill <- circus(100, 100, 10.7, 15, 0, 0)
+bill2 <- circus(100, 100, 10.7, 15, 0, 0)
+cock_head <- circus(100, 100, 15, 15, 0, 15)
+cock_head$X <- cock_head$X +1.6
+cock_head$Y <- cock_head$Y +1.1
+cock_beard <- circus(100, 100, 1, 5, 1, 1)
+cock_crest <- circus(100, 100, 15, 30, 20, 40)
+cock_pupil <- circus(100, 100, 0, 0, 0, 0)
+
+forest <- circus(100, 100, 15, 200, 15, 100)
+fir <- data.frame(x = 3, y = seq(-3, 4, length.out = 100))
+fir$xend <- seq(3, 5, length.out = 100)
+fir$yend <- 4 - fir$xend
+
+
+fir2 <- data.frame(x = 3, y = seq(4, -3, length.out = 100))
+fir2$xend <- seq(3, -3, length.out = 100)
+fir2$yend <- fir$yend
+
+
+ray <- data.frame(x=3, y = 5, angle = runif(100, 0, 2*3.14), radius = rnorm(100, 1, 0.5))
+
+stars <- data.frame(x = rnorm(30, 1, 5), y = rnorm(30, 11, 0.5) )
+
+snow <- data.frame(x = rnorm(3000, 3, 10), y = rnorm(3000, -3, 0.1) )
+snow$y[snow$y < -3] <-snow$y [snow$y < -3] + 0.3
+
+ggplot() + geom_polygon(data = forest, aes(X*3, Y ), fill = "white", color = "black") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill="blue")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill="blue")) +
+  xlab("") +
+  ylab("") +
+  ylim(-3, 12) +
+  xlim(-7, 10) +
+  geom_curve(data = fir, aes(x=x, y=y, xend = xend, yend = yend), curvature = -0, color = "green") +
+  geom_curve(data = fir, aes(x=x, y=y +1, xend = xend, yend = yend + 1), curvature = -0, color = "darkgreen") +
+  geom_curve(data = fir, aes(x=x, y=y -1, xend = xend, yend = yend - 1), curvature = -0, color = "darkgreen") +
+  geom_curve(data = fir2, aes(x=x, y=y, xend = xend, yend = yend), curvature = -0, color = "darkgreen") +
+  geom_curve(data = fir2, aes(x=x, y=y +1, xend = xend, yend = yend + 1), curvature = -0, color = "darkgreen") +
+  geom_curve(data = fir2, aes(x=x, y=y -1, xend = xend, yend = yend - 1), curvature = -0, color = "darkgreen") +
+  geom_spoke(data = ray, aes(x=x, y=y, angle = angle, radius = radius), color = "yellow") +
+  geom_point(data  = stars, aes(x=x, y=y), color = "yellow", size=10, shape = "*") + geom_point(data  = snow, aes(x=x, y=y), color = "white") +
+  geom_point(aes(x = rnorm(100,1,10), y=rnorm(100,2, 2)), shape=8, size=3, color="white") +
+  geom_polygon(data = bill2, aes(X + 5, Y-0.5 +5), fill = "gold", color = "black") + geom_polygon(data = bill, aes(X+ 5, Y+5), fill = "gold", color = "black")  +
+  geom_polygon(data = cock_head, aes(X+ 5, Y+5), fill = "orange", color = "black") +
+  geom_polygon(data = cock_crest, aes(X*1.2 + 4+ 5, Y*1.2 +4+5), fill = "red", color = "black") +
+  geom_polygon(data = cock_beard, aes(X/1.5+0.9+ 5, Y*1.2-3+5), fill = "red") +
+  geom_polygon(data = cock_pupil, aes(X/4 + 1.6 + 5, Y/3 + 1.6+5), fill = "black") +
+  geom_text(aes(x=0, y = 9), label = "Year of the roosteR", size = 10, color = "yellow") +
+  geom_text(aes(x=0, y =7), label = "2017", size = 15, color = "white")
+#___________________________
+
+
+
+
