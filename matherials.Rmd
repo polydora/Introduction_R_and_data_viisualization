@@ -54,7 +54,7 @@ output:
 
 ## *Лекция 3.* Работа с базовой графикой
 
-- [Скрипт](https://drive.google.com/file/d/1-iWTD5agp_qDRDy9HDQMsHjKCrkzlzyh/view?usp=drive_link)
+- [Скрипт](https://drive.google.com/file/d/1umsAQh_bmEme3nRjDFNsscnLVPILl2BD/view?usp=drive_link)
 
 - [Домашнее задание](https://docs.google.com/document/d/1Bnb6Cd25O3HxrTE1YXVky1stsDZ7mwvU/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
 
