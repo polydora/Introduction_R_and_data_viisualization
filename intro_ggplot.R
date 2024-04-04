@@ -238,6 +238,31 @@ ggplot(fev, aes(x = FEV, fill = Smoker)) + stat_density(geom = "area", size = 1,
 
 
 
+# Комбинируем несколько рисунков
+
+## Создаем несколько рисунков
+
+Pl1 <- 
+  ggplot(fev, aes(x = FEV, fill = Smoker)) + 
+  stat_density(geom = "area", size = 1, color = "red") + 
+  facet_wrap( ~ Sex, ncol = 1)
+
+
+Pl2 <-
+  ggplot(fev, aes(x = FEV)) + 
+  geom_histogram() + 
+  facet_wrap( ~ Sex, ncol = 1) 
+
+
+## Соединяем рисунки в один
+
+library(cowplot)
+
+plot_grid(Pl1, Pl2, ncol = 2, labels = "AUTO")
+
+
+##########################################################################
+
 # Визуализация данных с использованием простейшей статистической обработки
 
 ## Боксплоты

@@ -549,6 +549,9 @@ ggplot(fev, aes(x = FEV)) +
 ```
 
 
+
+
+
 ## Применяем фасетирование
 ### Но у нас есть еще и данные по полу
 ### Мы можем отразить частотное распределение с помощью фасетирования 
@@ -584,6 +587,35 @@ ggplot(fev, aes(x = FEV, fill = Smoker)) +
   facet_wrap( ~ Sex, ncol = 1)
 
 ```
+
+
+# Комбинируем несколько рисунков
+
+## Создаем несколько рисунков
+
+```{r}
+Pl1 <- 
+  ggplot(fev, aes(x = FEV, fill = Smoker)) + 
+  stat_density(geom = "area", size = 1, color = "red") + 
+  facet_wrap( ~ Sex, ncol = 1)
+
+
+Pl2 <-
+  ggplot(fev, aes(x = FEV)) + 
+  geom_histogram() + 
+  facet_wrap( ~ Sex, ncol = 1) 
+
+
+```
+
+## Соединяем рисунки в один
+
+```{r}
+library(cowplot)
+
+plot_grid(Pl1, Pl2, ncol = 2, labels = "AUTO")
+```
+
 
 
 # Визуализация данных с использованием простейшей статистической обработки
@@ -622,7 +654,7 @@ ggplot(fev, aes(x = Smoker, y = FEV)) +
 4. Нарисовать график
 
 
-## Знакомимся с пакетом `dplyr`
+## Первое знакомимся с пакетом `dplyr`
 
 ```{r}
 library(dplyr)
