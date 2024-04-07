@@ -79,6 +79,8 @@ output:
 - [Данные для домашней работы](data/hydrology_2022.xls)
 
 
+- [Видео семинара](https://drive.google.com/file/d/16iEdmxlrEZvNKceSoJSFFhPYvBUkb9w8/view?usp=drive_link)
+
 ## *Лекция 5.* Работа с данными
 <br>
 <!-- - [Скрипт]() -->
