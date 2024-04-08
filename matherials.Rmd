@@ -82,9 +82,9 @@ output:
 - [Видео семинара](https://drive.google.com/file/d/16iEdmxlrEZvNKceSoJSFFhPYvBUkb9w8/view?usp=drive_link)
 
 ## *Лекция 5.* Работа с данными
-<br>
-<!-- - [Скрипт]() -->
-<!-- - [Домашнее задание]() -->
+
+- [Скрипт](https://drive.google.com/drive/folders/1lwv5VU1yQtOrQ4MN39UK-z9Q_G8Jp6-s?usp=drive_link)
+- [Домашнее задание](https://drive.google.com/drive/folders/1POZJQBPQn-X5_vWzeJeDZO2QO0t4GvV0?usp=drive_link)
 
 
 ## *Лекция 6.* Встроенные функции для работы с данными
