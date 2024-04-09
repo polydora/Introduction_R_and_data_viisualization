@@ -81,6 +81,8 @@ output:
 
 - [Видео семинара](https://drive.google.com/file/d/16iEdmxlrEZvNKceSoJSFFhPYvBUkb9w8/view?usp=drive_link)
 
+- [Скрипт с решением для домашнего задания по `ggplot`](Home_Work_ggplot_Solution.R)
+
 ## *Лекция 5.* Работа с данными
 
 - [Скрипт](https://drive.google.com/file/d/1m4JmZ08WerFwTjz9SffdLGV7wot4ja6n/view?usp=drive_link)
