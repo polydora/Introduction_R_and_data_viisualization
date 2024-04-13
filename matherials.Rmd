@@ -96,6 +96,7 @@ output:
 ## *Лекция 6.* Встроенные функции для работы с данными
 
 - [Скрипт](https://drive.google.com/file/d/1eCvxEE89uqMvccfCLPdcEBL0r9MGnkQf/view?usp=drive_link)
+- [Видео семинара](https://drive.google.com/file/d/10m1Ab_QRNG4ZXcXzhWHHhO1qjD9w1sOc/view?usp=drive_link)
 <br>
 <!-- - [Домашнее задание]() -->
 
