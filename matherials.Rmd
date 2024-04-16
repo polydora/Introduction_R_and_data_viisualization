@@ -79,22 +79,35 @@ output:
 - [Данные для домашней работы](data/hydrology_2022.xls)
 
 
+- [Видео семинара](https://drive.google.com/file/d/16iEdmxlrEZvNKceSoJSFFhPYvBUkb9w8/view?usp=drive_link)
+
+<!-- - [Скрипт с решением для домашнего задания по `ggplot`](Home_Work_ggplot_Solution.R) -->
+
 ## *Лекция 5.* Работа с данными
-<br>
-<!-- - [Скрипт]() -->
-<!-- - [Домашнее задание]() -->
+
+- [Скрипт](https://drive.google.com/file/d/1m4JmZ08WerFwTjz9SffdLGV7wot4ja6n/view?usp=drive_link)
+- [Данные для работы](https://drive.google.com/file/d/1LHik6QsUSfSvjCvXrVjsOLAa-oAx5m1u/view?usp=drive_link)
+- [Домашнее задание](https://docs.google.com/document/d/1LS5IpHuRJ7fVXKS7ryaf53ZF4EsnLwAF/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+- [Данные для домашней работы № 1](https://drive.google.com/file/d/1qFY5BnUChUevet9sX4ggSKu9sPy_za0d/view?usp=drive_link)
+- [Данные для домашней работы №2](https://docs.google.com/document/d/1LS5IpHuRJ7fVXKS7ryaf53ZF4EsnLwAF/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
+- [Видео семинара](https://drive.google.com/file/d/1GkSGB3yLR0meEyQgUfBMXPc-UFXLw3Vm/view?usp=drive_link)
 
 
 ## *Лекция 6.* Встроенные функции для работы с данными
+
+- [Скрипт](https://drive.google.com/file/d/1eCvxEE89uqMvccfCLPdcEBL0r9MGnkQf/view?usp=drive_link)
+- [Видео семинара](https://drive.google.com/file/d/10m1Ab_QRNG4ZXcXzhWHHhO1qjD9w1sOc/view?usp=drive_link)
 <br>
-<!-- - [Скрипт]() -->
 <!-- - [Домашнее задание]() -->
 
 
 ## *Лекция 7.* Пакеты `tidyr` и `dplyr`
+- [Скрипт](https://drive.google.com/file/d/1igUuD4_rWM_cuyy2PZCszrjjITitPHcV/view?usp=drive_link)
+- [Датасет 1](https://drive.google.com/file/d/1rEZzoh_7QFDgNzXFPUSqJZo-3cwfwUQ-/view?usp=drive_link)
+- [Датасет 2](https://drive.google.com/file/d/12BqJZhSt7TzhamvqbG3TUG2Fi8KDA3_P/view?usp=drive_link)
+- [Датасет 3](https://drive.google.com/file/d/1WAONxm4E6ExU3Xr2C1qg1016UPMfILr_/view?usp=drive_link)
+- [Домашнее задание](https://docs.google.com/document/d/1wyodCuBz0cm-Rl8dEjeCZOHxTOD1zWUW/edit?usp=drive_link&ouid=104073765878946580320&rtpof=true&sd=true)
 <br>
-<!-- - [Скрипт]() -->
-<!-- - [Домашнее задание]() -->
 
 
 ## *Лекция 8.* Основы литературного программирования. Часть 1: Язык разметки страниц `R Markdown`
