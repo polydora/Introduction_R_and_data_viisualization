@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+author: "Вадим Хайтов"
+date: '16 апреля 2018 г '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Мой первый RMD-документ
+Частотное распределение веса новорожденных у курящих и некурящих матерей.
+
+```{r, echo = FALSE, fig.height=1.5, fig.align='center', eval=TRUE}
+library(ggplot2)
+library(MASS)
+baby <- birthwt #Чтение встроенных данных
+baby$smoke[baby$smoke == 1] <- "Smoker"
+baby$smoke[baby$smoke == 0] <- "Non smoker"
+ggplot(baby, aes(x = bwt)) + geom_density(aes(fill = smoke), alpha = 0.5) + theme_bw()
+```
+
+Рисунок позволяет увидеть явную тенденцию.
