@@ -1,7 +1,7 @@
 ---
-title: "Основы литературного программировния"
+title: "Основы литературного программирования"
 author: "Вадим Хайтов"
-subtitle: "Литературное программирование"
+subtitle: ""
 output:
   ioslides_presentation:
     css: assets/my_styles.css
