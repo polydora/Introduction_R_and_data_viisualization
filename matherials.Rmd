@@ -117,6 +117,7 @@ output:
 
 - [Презентация](Pres_literature_programming_theory.html)
 - [Пример проекта](RMD_Project_example.zip)
+- [Видео семинара](https://drive.google.com/file/d/17aijCo_K4L-b06YXV8iBPyLMTekn5RaN/view?usp=drive_link)
 
 <br>
 
