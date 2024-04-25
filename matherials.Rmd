@@ -146,6 +146,17 @@ output:
 
 ## *Лекция 9.* Основы литературного программирования. Часть 2: Работа с таблицами в R Markdown и создание отчетов в формате Word.
 
+Необходимо поставить следующие пакеты 
+
+```{r eval=FALSE, echo=TRUE}
+
+install.packages("flextable")
+install.packages("officer")
+install.packages("broom")
+
+```
+
+
 <br>
 <!-- - [Скрипт]() -->
 <!-- - [Домашнее задание]() -->
